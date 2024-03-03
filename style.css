@@ -1,0 +1,647 @@
+@font-face {
+    font-family: mazius;
+    src: url(./Mazius-Extraitalic.121a71a7.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#loader {
+    width: 100vw;
+    font-family: gilroy;
+    height: 100vh;
+    z-index: 9999;
+    position: fixed;
+}
+
+#in1 {
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    position: absolute;
+    z-index: 99;
+}
+
+#in1 #tophead {
+    color: #fff;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    font-family: gilroy;
+    transform: translate(-50%, 0);
+}
+
+#tophead h5 {
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+
+#in1 h1 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-family: monument;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#in1 span #ank{
+    font-family: shaloems;
+    text-transform: none;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #14cf93;
+    font-size: 5vw;
+    
+}
+
+.reveal .parent {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reveal .parent .child {
+    display: block;
+}
+
+.child span {
+    display: inline-flex;
+}
+
+#in2 {
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+    background-color: #14cf93;
+    z-index: 999;
+}
+
+#in3 {
+    width: 100vw;
+    height: 0vh;
+    position: absolute;
+    bottom: 0;
+    background-color: #f1f1f1;
+    z-index: 999;
+}
+
+#nav {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    position: fixed;
+    z-index: 9999;
+    font-family: gilroy;
+}
+
+#nav h4 {
+    font-size: 12px;
+    letter-spacing: .5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+    transition: ease .1s;
+    opacity: 0;
+}
+
+#nav h4:hover {
+    border: none;
+}
+
+#nav h4::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #000;
+}
+
+#nav h4:hover::before {
+    animation-name: anim1;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim1 {
+    0% {
+        width: 0;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 100%;
+        right: 0%;
+    }
+}
+
+
+#main {
+    position: relative;
+}
+
+#page1 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #fcfaf8;
+    padding-top: 1px;
+    font-family: gilroy;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 100px 0 50px;
+}
+
+.row h1 {
+    font-size: 13vw;
+    font-weight: 100;
+    color: #383838;
+}
+
+.row #text {
+    margin-top: -70px;
+}
+
+.row h5 {
+    opacity: .7;
+    font-size: 12px;
+    letter-spacing: .3px;
+    font-weight: 100;
+}
+
+.row2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -50px;
+    padding: 0 50px;
+}
+
+.row2 i {
+    margin-top: 85px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #e2e2e2c0;
+    font-size: 2vw;
+    color: #585858e8;
+    font-weight: 100;
+}
+
+.row2 h1 {
+    font-size: 13vw;
+    font-weight: 100;
+    color: #383838;
+}
+
+.row2 svg {
+    height: 120px;
+    margin-left: 100px;
+}
+
+.row2 path, polyline {
+    stroke: #14cf93;
+}
+
+#images{
+    width: 100%;
+    padding: 0 7vw;
+    margin-top: 5vw;
+    padding-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 140px;
+    padding: 100px;
+}
+
+#images #imgl{
+    width: 30%;
+    margin-top: 8vw;
+    padding-top: 7vh;
+    height: 45vh;
+}
+
+#imgl h2{
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+#imgl h2 span{
+    color: #19c08bea;
+    font-family: mazius;
+    letter-spacing: .5px;
+    font-weight: 500;
+}
+
+#imgr{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 300px;
+    z-index: 9999;
+}
+
+#imgr .imgs{
+    position: absolute;
+    top: 5%;
+    filter: grayscale();
+    width: 30vw;
+    height: 44vw;
+    border-radius: 2vw;
+    transition: all ease-in .1s;
+    z-index: 999;
+}
+
+#imgr .imgs:hover{
+    filter: grayscale(0);
+}
+
+#imgr .imgs:nth-child(1){
+    transform: translate(-40%, -15%) rotate(-12deg);
+    background-image: url(https://images.unsplash.com/photo-1533973860717-d49dfd14cf64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1571&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+#imgr .imgs:nth-child(2){
+    transform: translate(-10%, 0%) rotate(-2deg);
+    background-image: url(https://images.unsplash.com/photo-1604681630513-69474a4e253f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+#imgr .imgs:nth-child(3){
+    transform: translate(15%, 10%) rotate(5deg);
+    background-image: url(https://images.unsplash.com/photo-1613005798967-632017e477c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+    background-position:  center;
+    background-size: cover;
+}
+
+#page2{
+    width: 100%;
+    min-height: 200vh;
+    background-color: #f1f1f1;
+    position: relative;
+    transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+
+#work{
+    width: 100%;
+    height: 75vh;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+#work::before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    transform: rotate(-180deg);
+    width: 100%;
+    height: 100px;
+    background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+    background-size: cover;
+}
+
+#work svg{
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+#work path {
+    stroke: #bdbdbd;
+}
+
+#work h4{
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #8a8989;
+    margin-left: 180px;
+    font-weight: 100;
+}
+
+#work h4 span{
+    font-family: mazius;
+    font-weight: 100;
+}
+
+#work h3{
+    margin-left: 180px;
+    font-weight: 500;
+}
+
+#work::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    bottom: -50px;
+    left: 180px;
+    height: 1px;
+    background-color: #8a8989d8;
+}
+
+#feat{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    position: relative;
+    padding-top: 1px;
+}
+
+#feat h2{
+    font-size: 9vw;
+    position: absolute;
+    font-family: gilroy;
+    top: 50%;
+    left: 15%;
+    font-weight: 300;
+}
+
+#feat h2 span{
+    color: #00ca8a;
+    font-family: mazius;
+}
+
+#feat h2 sub{
+    font-size: 1.5vw;
+    position: absolute;
+    top: 60%;
+    left: 105%;
+}
+
+#feat svg{
+    margin-left: 86%;
+    margin-top: 200px;
+    transform: rotate(90deg);
+}
+
+#feat path {
+    stroke: #bdbdbd;
+}
+
+
+#cursor{
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    left: 30%;
+    position: absolute;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all ease .1s;
+    z-index: 999;
+}
+
+#cursor #crow{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw;
+
+}
+
+#crow #crsr{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+#crow #beh h3{
+    font-weight: 100;
+    font-size: .9vw;
+    font-family: gilroy;
+    letter-spacing: .2px;
+    background-color: #fff;
+    padding: 7px 15px;
+    border-radius: 40px;
+}
+
+#elem{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#elem img{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    object-fit: cover;
+    position: absolute;
+    animation-name: anim2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#elem img:nth-child(2){
+    animation-delay: 1s;
+}
+
+#elem img:nth-child(3){
+    animation-delay: 2s;
+}
+
+#elem img:nth-child(4){
+    animation-delay: 3s;
+}
+
+#elem img:nth-child(5){
+    animation-delay: 4s;
+}
+
+#elem img:nth-child(6){
+    animation-delay: 5s;
+}
+
+
+@keyframes anim2 {
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    21%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#inr1 {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 5vw;
+    overflow: hidden;
+}
+
+#inr1 #a1{
+    width: 55%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 6vw;
+    transition: all ease .2s;
+    cursor: none;
+}
+
+#inr1 img{
+    width: 110%;
+    object-fit: cover;
+}
+
+#inr1 #a2{
+    width: 30%;
+    overflow: hidden;
+    border-radius: 5vw;
+    transition: all ease .2s;
+    cursor: none;
+}
+
+#inr2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+    overflow: hidden;
+}
+
+#inr2 #c1{
+    width: 50%;
+    overflow: hidden;
+    border-radius: 5vw;
+    transition: all ease .2s;
+    cursor: none;
+}
+
+#inr2 img{
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#inr3 {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 5vw;
+    overflow: hidden;
+}
+
+#inr3 #b1{
+    width: 30%;
+    overflow: hidden;
+    border-radius: 5vw;
+    transition: all ease .2s;
+    cursor: none;
+}
+
+#inr3 #b2{
+    width: 55%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 6vw;
+    transition: all ease .2s;
+    cursor: none;
+}
+
+#inr3 img{
+    width: 110%;
+    object-fit: cover;
+}
+
+#inr4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 5vw;
+    overflow: hidden;
+}
+
+#inr4 #d1{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 3vw;
+    transition: all ease .2s;
+    cursor: none;
+}
+
+#inr4 img{
+    width: 110%;
+    object-fit: cover;
+}
+
+#inr4 #d2{
+    width: 38%;
+    overflow: hidden;
+    border-radius: 3vw;
+    transition: all ease .2s;
+    cursor: none;
+}
